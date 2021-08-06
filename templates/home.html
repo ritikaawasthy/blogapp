@@ -47,7 +47,7 @@
 
 <div class="col-xl-2 col-lg-2 col-md-2">
 <div class="logo">
-<a href="index-2.html"><img src="assets/img/logo/logo.png" alt=""></a>
+<a href="{% url 'home' %}"><img src="{% static 'assets/img/logo/logo.png'%}" alt=""></a>
 </div>
 </div>
 <div class="col-xl-10 col-lg-10 col-md-10">
@@ -104,13 +104,13 @@
 
 <article class="blog_item">
 <div class="blog_item_img">
-<img class="card-img rounded-0" src="assets/img/blog/single_blog_1.png" alt="">
+<img class="card-img rounded-0" src="{% static 'assets/img/blog/single_blog_1.png' %}" alt="">
 <a href="#" class="blog_item_date">
 <h3>{{ post.date }}</h3>
 </a>
 </div>
 <div class="blog_details">
-<a class="d-inline-block" href="single-blog.html">
+<a class="d-inline-block" href="#">
 
 <h2>{{ post.title }}</h2>
 
@@ -171,7 +171,7 @@
 <div class="single-footer-caption mb-30">
 
 <div class="footer-logo">
-<a href="index-2.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+<a href="#"><img src="{% static 'assets/img/logo/logo2_footer.png' %}" alt=""></a>
 </div>
 <div class="footer-tittle">
 <div class="footer-pera">
